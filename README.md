@@ -17,4 +17,7 @@ O objetivo deste repositório é organizar meus estudos em programação, especi
 - GCC (Compilador de C)
 - Visual Studio Code (VSCode)
 
+## Ambinete de desenvolvimento
+-Linux Fedora e Linux Pop_OS!
+-Windows 11
 
