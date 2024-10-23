@@ -17,3 +17,4 @@ O objetivo deste repositório é organizar meus estudos em programação, especi
 - GCC (Compilador de C)
 - Visual Studio Code (VSCode)
 
+
