@@ -16,19 +16,19 @@ int checar(int numero)
 int main()
 {
     int numero, continua;
-    continua=1;
-    
-    while (continua==1) {
+    continua = 1;
 
-    
-    printf("Digite um número: ");
-    scanf("%d", &numero);
+    while (continua == 1)
+    {
 
-    checar(numero);
-    printf("Deseja continuar?(1 - Sim, 0 - Não):");
-    scanf("%d", &continua);
+        printf("Digite um número: ");
+        scanf("%d", &numero);
+
+        checar(numero);
+        printf("Deseja continuar?(1 - Sim, 0 - Não):");
+        scanf("%d", &continua);
     }
-          printf("Programa encerrado.\n");
+    printf("Programa encerrado.\n");
 
     return 0;
 }
