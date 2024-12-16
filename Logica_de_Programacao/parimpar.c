@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int checar(int numero)
+void checar(int numero)
 {
 
     if (numero % 2 == 0)
@@ -25,8 +25,13 @@ int main()
         scanf("%d", &numero);
 
         checar(numero);
+         
         printf("Deseja continuar?(1 - Sim, 0 - Não):");
         scanf("%d", &continua);
+        if (continua!=0 && continua!=1){
+        printf("Opção inválida!\n");
+        break;
+        }
     }
     printf("Programa encerrado.\n");
 
