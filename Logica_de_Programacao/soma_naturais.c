@@ -1,25 +1,26 @@
 #include <stdio.h>
 
-int obeterNumeroNatural()
+int obterNumeroNatural()
 {
     int numero, resultado;
     char buffer;
 
-    
     do
     {
 
-        resultado= scanf("%d", &numero);
+        resultado = scanf("%d", &numero);
         if (numero < 0)
         {
             printf("O número não é natural. por favor, digite um número maior que 0:");
-        } else if( resultado !=1){
+        }
+        else if (resultado != 1)
+        {
             printf("Entrada inválida. Por favor, digite um número inteiro.\n");
-            while ((buffer = getchar()) != '\n' && buffer != EOF); // Limpa o buffer - entender melhor
+            while ((buffer = getchar()) != '\n' && buffer != EOF)
+                ; // Limpa o buffer - entender melhor
         }
 
-
-    } while (numero < 0 || resultado !=1);
+    } while (numero < 0 || resultado != 1);
 
     return numero;
 }
@@ -33,12 +34,12 @@ int main()
     primeiro_numero = obeterNumeroNatural();
 
     printf("Digite o último número: ");
-    ultimo_numero = obeterNumeroNatural();
+    ultimo_numero = obterNumeroNatural();
 
     for (int i = primeiro_numero; i <= ultimo_numero; i++)
     {
         soma_naturais += i;
     }
-    printf("A soma total de todos os números naturais entre %d e %d é de: %d\n", primeiro_numero, ultimo_numero, soma_naturais);
+    printf("A soma total de todos os números naturais entre %d de a %d é de: %d\n", primeiro_numero, ultimo_numero, soma_naturais);
     return 0;
 }
